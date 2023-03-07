@@ -139,6 +139,7 @@
             this.btnEliminarMateria.TabIndex = 11;
             this.btnEliminarMateria.Text = "Eliminar";
             this.btnEliminarMateria.UseVisualStyleBackColor = true;
+            this.btnEliminarMateria.Click += new System.EventHandler(this.btnEliminarMateria_Click);
             // 
             // dgvMaterias
             // 
