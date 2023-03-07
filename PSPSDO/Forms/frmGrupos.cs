@@ -56,12 +56,24 @@ namespace PSPSDO.Forms
 
         private void btnActualizarGrupos_Click(object sender, EventArgs e)
         {
-            btnActualizarGrupos.Enabled = false;
-            btnEliminarGrupos.Enabled = false;
-            btnActualizarGrupos.Enabled = true;
-            btnCargarGrupos.Enabled = true;
-            btnGuardarGrupos.Enabled = true;
-            dgvGrupos.ReadOnly = true;
+            GrupoModels grupoModels = new GrupoModels();
+
+            GrupoClass grupo = new GrupoClass();
+
+            grupoModels.Id = (int)dgvGrupos.Rows[dgvGrupos.CurrentCell.RowIndex].Cells[0].Value;
+
+            grupoModels.Clave = txtClaveGrupos.Text;
+            grupoModels.Descripcion = txtDescripcionGrupos.Text;
+            grupoModels.UsuarioUltima = int.Parse(txtUsuarioGrupo.Text);
+
+            string resultado = grupo.ActualizarGrupos(grupoModels);
+            MessageBox.Show(resultado);
+
+            DataSet ds = grupo.GetGrupos();
+
+
+
+            dgvGrupos.DataSource = ds.Tables[0];
         }
 
         private void btnElimiarGrupos_Click(object sender, EventArgs e)

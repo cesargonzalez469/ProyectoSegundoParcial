@@ -43,5 +43,28 @@ namespace PSPSDO.Classes
 
 
         }
+
+        public string ActualizarGrupos(GrupoModels grupo)
+        {
+            try
+            {
+                ArrayList parametros = new ArrayList();
+                BDContext bd = new BDContext();
+
+                parametros.Add(new SqlParameter { ParameterName = "@pId", SqlDbType = System.Data.SqlDbType.VarChar, Value = grupo.Id });
+                parametros.Add(new SqlParameter { ParameterName = "@pClave", SqlDbType = System.Data.SqlDbType.VarChar, Value = grupo.Clave });
+                parametros.Add(new SqlParameter { ParameterName = "@pDescripcion", SqlDbType = System.Data.SqlDbType.VarChar, Value = grupo.Descripcion });
+                parametros.Add(new SqlParameter { ParameterName = "@pUsuarioUltMod", SqlDbType = System.Data.SqlDbType.VarChar, Value = grupo.UsuarioUltima });
+                bd.ExecuteNonQuery("sp_UpdateGrupos", parametros);
+                return "Actualizacion correcta";
+            }
+            catch (Exception ex)
+            {
+
+                return ex.Message;
+            }
+
+
+        }
     }
 }
