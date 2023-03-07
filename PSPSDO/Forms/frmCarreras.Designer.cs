@@ -30,8 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCarreras));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.btnMostrar = new System.Windows.Forms.Button();
             this.btnBorrar = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.dgvCarreras = new System.Windows.Forms.DataGridView();
@@ -48,8 +48,8 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.btnUpdate);
+            this.groupBox1.Controls.Add(this.btnMostrar);
             this.groupBox1.Controls.Add(this.btnBorrar);
             this.groupBox1.Controls.Add(this.btnAgregar);
             this.groupBox1.Controls.Add(this.dgvCarreras);
@@ -68,47 +68,54 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Carreras";
             // 
-            // button2
+            // btnUpdate
             // 
-            this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(547, 149);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(144, 41);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "Actualizar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnUpdate.BackColor = System.Drawing.Color.Transparent;
+            this.btnUpdate.BackgroundImage = global::PSPSDO.Properties.Resources._1601884;
+            this.btnUpdate.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnUpdate.ForeColor = System.Drawing.Color.Transparent;
+            this.btnUpdate.Location = new System.Drawing.Point(443, 149);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(54, 51);
+            this.btnUpdate.TabIndex = 8;
+            this.btnUpdate.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // btnMostrar
             // 
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(384, 149);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(137, 41);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Mostrar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnMostrar.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnMostrar.ForeColor = System.Drawing.Color.White;
+            this.btnMostrar.Location = new System.Drawing.Point(287, 149);
+            this.btnMostrar.Name = "btnMostrar";
+            this.btnMostrar.Size = new System.Drawing.Size(137, 41);
+            this.btnMostrar.TabIndex = 8;
+            this.btnMostrar.Text = "Mostrar";
+            this.btnMostrar.UseVisualStyleBackColor = false;
+            this.btnMostrar.Click += new System.EventHandler(this.btnMostrar_Click);
             // 
             // btnBorrar
             // 
-            this.btnBorrar.BackColor = System.Drawing.Color.Red;
+            this.btnBorrar.BackColor = System.Drawing.Color.White;
+            this.btnBorrar.BackgroundImage = global::PSPSDO.Properties.Resources._542724;
+            this.btnBorrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnBorrar.ForeColor = System.Drawing.Color.White;
-            this.btnBorrar.Location = new System.Drawing.Point(215, 149);
+            this.btnBorrar.Location = new System.Drawing.Point(203, 149);
             this.btnBorrar.Name = "btnBorrar";
-            this.btnBorrar.Size = new System.Drawing.Size(137, 41);
+            this.btnBorrar.Size = new System.Drawing.Size(60, 51);
             this.btnBorrar.TabIndex = 8;
-            this.btnBorrar.Text = "Borrar";
             this.btnBorrar.UseVisualStyleBackColor = false;
+            this.btnBorrar.Click += new System.EventHandler(this.btnBorrar_Click);
             // 
             // btnAgregar
             // 
-            this.btnAgregar.BackColor = System.Drawing.Color.Lime;
-            this.btnAgregar.ForeColor = System.Drawing.Color.Black;
+            this.btnAgregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnAgregar.ForeColor = System.Drawing.Color.Transparent;
             this.btnAgregar.Location = new System.Drawing.Point(43, 149);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(137, 41);
             this.btnAgregar.TabIndex = 7;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = false;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // dgvCarreras
             // 
@@ -199,8 +206,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Button btnAgregar;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.Button btnMostrar;
         private System.Windows.Forms.Button btnBorrar;
     }
 }

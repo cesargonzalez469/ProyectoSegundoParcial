@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Proyecto_Segundo_Parcial_2.Clases;
+using PSPSDO.Classes;
 
 namespace PSPSDO.Forms
 {
@@ -17,7 +19,22 @@ namespace PSPSDO.Forms
             InitializeComponent();
         }
 
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            updateCarrera Opciones = new updateCarrera();
+            Opciones.add(dgvCarreras,txtNombre.Text,txtClave.Text,txtDescripcion.Text);
+        }
 
+        private void btnBorrar_Click(object sender, EventArgs e)
+        {
+            updateCarrera Opciones = new updateCarrera();
+            Opciones.delete(dgvCarreras, dgvCarreras.CurrentCell.RowIndex);
+        }
 
+        private void btnMostrar_Click(object sender, EventArgs e)
+        {
+            updateCarrera Opciones = new updateCarrera();
+            Opciones.show(dgvCarreras);
+        }
     }
 }
