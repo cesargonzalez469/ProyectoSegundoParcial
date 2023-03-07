@@ -47,7 +47,7 @@
             this.dgvGrupos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvGrupos.Location = new System.Drawing.Point(12, 250);
             this.dgvGrupos.Name = "dgvGrupos";
-            this.dgvGrupos.Size = new System.Drawing.Size(776, 188);
+            this.dgvGrupos.Size = new System.Drawing.Size(536, 312);
             this.dgvGrupos.TabIndex = 0;
             // 
             // lblUsuarioGrupo
@@ -84,29 +84,31 @@
             // btnGuardarGrupos
             // 
             this.btnGuardarGrupos.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardarGrupos.Location = new System.Drawing.Point(34, 197);
+            this.btnGuardarGrupos.Location = new System.Drawing.Point(35, 205);
             this.btnGuardarGrupos.Name = "btnGuardarGrupos";
             this.btnGuardarGrupos.Size = new System.Drawing.Size(75, 33);
             this.btnGuardarGrupos.TabIndex = 4;
             this.btnGuardarGrupos.Text = "Guardar";
             this.btnGuardarGrupos.UseVisualStyleBackColor = true;
+            this.btnGuardarGrupos.Click += new System.EventHandler(this.btnGuardarGrupos_Click);
             // 
             // btnCargarGrupos
             // 
             this.btnCargarGrupos.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCargarGrupos.Location = new System.Drawing.Point(142, 197);
+            this.btnCargarGrupos.Location = new System.Drawing.Point(142, 202);
             this.btnCargarGrupos.Name = "btnCargarGrupos";
             this.btnCargarGrupos.Size = new System.Drawing.Size(88, 39);
             this.btnCargarGrupos.TabIndex = 5;
             this.btnCargarGrupos.Text = "Cargar";
             this.btnCargarGrupos.UseVisualStyleBackColor = true;
+            this.btnCargarGrupos.Click += new System.EventHandler(this.btnCargarGrupos_Click);
             // 
             // btnActualizarGrupos
             // 
             this.btnActualizarGrupos.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnActualizarGrupos.Location = new System.Drawing.Point(267, 205);
             this.btnActualizarGrupos.Name = "btnActualizarGrupos";
-            this.btnActualizarGrupos.Size = new System.Drawing.Size(82, 39);
+            this.btnActualizarGrupos.Size = new System.Drawing.Size(82, 31);
             this.btnActualizarGrupos.TabIndex = 6;
             this.btnActualizarGrupos.Text = "Actualizar";
             this.btnActualizarGrupos.UseVisualStyleBackColor = true;
@@ -128,8 +130,9 @@
             // txtDescripcionGrupos
             // 
             this.txtDescripcionGrupos.Location = new System.Drawing.Point(119, 117);
+            this.txtDescripcionGrupos.Multiline = true;
             this.txtDescripcionGrupos.Name = "txtDescripcionGrupos";
-            this.txtDescripcionGrupos.Size = new System.Drawing.Size(100, 20);
+            this.txtDescripcionGrupos.Size = new System.Drawing.Size(199, 74);
             this.txtDescripcionGrupos.TabIndex = 9;
             // 
             // btnElimiarGrupos
@@ -137,27 +140,16 @@
             this.btnElimiarGrupos.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnElimiarGrupos.Location = new System.Drawing.Point(400, 207);
             this.btnElimiarGrupos.Name = "btnElimiarGrupos";
-            this.btnElimiarGrupos.Size = new System.Drawing.Size(75, 23);
+            this.btnElimiarGrupos.Size = new System.Drawing.Size(75, 29);
             this.btnElimiarGrupos.TabIndex = 10;
             this.btnElimiarGrupos.Text = "Eliminar";
             this.btnElimiarGrupos.UseVisualStyleBackColor = true;
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.SuspendLayout();
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(13, 334);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(516, 228);
-            this.dataGridView1.TabIndex = 0;
             // 
             // frmGrupos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(558, 574);
             this.Controls.Add(this.btnElimiarGrupos);
             this.Controls.Add(this.txtDescripcionGrupos);
             this.Controls.Add(this.txtClaveGrupos);
@@ -174,12 +166,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvGrupos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
-            this.ClientSize = new System.Drawing.Size(541, 574);
-            this.Controls.Add(this.dataGridView1);
-            this.Name = "frmGrupos";
-            this.Text = "frmGrupos";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.ResumeLayout(false);
 
         }
 
@@ -196,6 +182,5 @@
         private System.Windows.Forms.TextBox txtClaveGrupos;
         private System.Windows.Forms.TextBox txtDescripcionGrupos;
         private System.Windows.Forms.Button btnElimiarGrupos;
-        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
