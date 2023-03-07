@@ -38,7 +38,7 @@
             this.txtUsuarioGrupo = new System.Windows.Forms.TextBox();
             this.txtClaveGrupos = new System.Windows.Forms.TextBox();
             this.txtDescripcionGrupos = new System.Windows.Forms.TextBox();
-            this.btnElimiarGrupos = new System.Windows.Forms.Button();
+            this.btnEliminarGrupos = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGrupos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -112,6 +112,7 @@
             this.btnActualizarGrupos.TabIndex = 6;
             this.btnActualizarGrupos.Text = "Actualizar";
             this.btnActualizarGrupos.UseVisualStyleBackColor = true;
+            this.btnActualizarGrupos.Click += new System.EventHandler(this.btnActualizarGrupos_Click);
             // 
             // txtUsuarioGrupo
             // 
@@ -135,22 +136,24 @@
             this.txtDescripcionGrupos.Size = new System.Drawing.Size(199, 74);
             this.txtDescripcionGrupos.TabIndex = 9;
             // 
-            // btnElimiarGrupos
+            // btnEliminarGrupos
             // 
-            this.btnElimiarGrupos.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnElimiarGrupos.Location = new System.Drawing.Point(400, 207);
-            this.btnElimiarGrupos.Name = "btnElimiarGrupos";
-            this.btnElimiarGrupos.Size = new System.Drawing.Size(75, 29);
-            this.btnElimiarGrupos.TabIndex = 10;
-            this.btnElimiarGrupos.Text = "Eliminar";
-            this.btnElimiarGrupos.UseVisualStyleBackColor = true;
+            this.btnEliminarGrupos.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
+            this.btnEliminarGrupos.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminarGrupos.Location = new System.Drawing.Point(400, 207);
+            this.btnEliminarGrupos.Name = "btnEliminarGrupos";
+            this.btnEliminarGrupos.Size = new System.Drawing.Size(75, 29);
+            this.btnEliminarGrupos.TabIndex = 10;
+            this.btnEliminarGrupos.Text = "Eliminar";
+            this.btnEliminarGrupos.UseVisualStyleBackColor = true;
+            this.btnEliminarGrupos.Click += new System.EventHandler(this.btnElimiarGrupos_Click);
             // 
             // frmGrupos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(558, 574);
-            this.Controls.Add(this.btnElimiarGrupos);
+            this.Controls.Add(this.btnEliminarGrupos);
             this.Controls.Add(this.txtDescripcionGrupos);
             this.Controls.Add(this.txtClaveGrupos);
             this.Controls.Add(this.txtUsuarioGrupo);
@@ -181,6 +184,6 @@
         private System.Windows.Forms.TextBox txtUsuarioGrupo;
         private System.Windows.Forms.TextBox txtClaveGrupos;
         private System.Windows.Forms.TextBox txtDescripcionGrupos;
-        private System.Windows.Forms.Button btnElimiarGrupos;
+        private System.Windows.Forms.Button btnEliminarGrupos;
     }
 }

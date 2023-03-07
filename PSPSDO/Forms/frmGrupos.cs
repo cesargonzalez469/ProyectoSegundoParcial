@@ -53,5 +53,25 @@ namespace PSPSDO.Forms
             DataSet ds = bd.Fill("sp_SelectGrupos", parametros);
             dgvGrupos.DataSource = ds.Tables[0];
         }
+
+        private void btnActualizarGrupos_Click(object sender, EventArgs e)
+        {
+            btnActualizarGrupos.Enabled = false;
+            btnEliminarGrupos.Enabled = false;
+            btnActualizarGrupos.Enabled = true;
+            btnCargarGrupos.Enabled = true;
+            btnGuardarGrupos.Enabled = true;
+            dgvGrupos.ReadOnly = true;
+        }
+
+        private void btnElimiarGrupos_Click(object sender, EventArgs e)
+        {
+            btnActualizarGrupos.Enabled = true;
+            btnEliminarGrupos.Enabled = true;
+            btnActualizarGrupos.Enabled = false;
+            btnCargarGrupos.Enabled = false;
+            btnGuardarGrupos.Enabled = false;
+            dgvGrupos.ReadOnly = false;
+        }
     }
 }
