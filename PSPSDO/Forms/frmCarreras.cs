@@ -10,11 +10,14 @@ using System.Windows.Forms;
 
 namespace PSPSDO.Forms
 {
-    public partial class Materias : Form
+    public partial class frmCarreras : Form
     {
-        public Materias()
+        public frmCarreras()
         {
             InitializeComponent();
         }
+
+
+
     }
 }
