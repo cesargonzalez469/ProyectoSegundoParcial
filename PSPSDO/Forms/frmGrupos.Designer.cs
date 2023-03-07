@@ -141,6 +141,17 @@
             this.btnElimiarGrupos.TabIndex = 10;
             this.btnElimiarGrupos.Text = "Eliminar";
             this.btnElimiarGrupos.UseVisualStyleBackColor = true;
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(13, 334);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(516, 228);
+            this.dataGridView1.TabIndex = 0;
             // 
             // frmGrupos
             // 
@@ -163,6 +174,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvGrupos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
+            this.ClientSize = new System.Drawing.Size(541, 574);
+            this.Controls.Add(this.dataGridView1);
+            this.Name = "frmGrupos";
+            this.Text = "frmGrupos";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.ResumeLayout(false);
 
         }
 
@@ -179,5 +196,6 @@
         private System.Windows.Forms.TextBox txtClaveGrupos;
         private System.Windows.Forms.TextBox txtDescripcionGrupos;
         private System.Windows.Forms.Button btnElimiarGrupos;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
