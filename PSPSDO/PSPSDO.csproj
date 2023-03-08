@@ -64,7 +64,6 @@
     <Compile Include="Forms\frmAlumnos.Designer.cs">
       <DependentUpon>frmAlumnos.cs</DependentUpon>
     </Compile>
-    
     <Compile Include="Forms\frmGrupos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,7 +88,9 @@
     <Compile Include="Models\PersonaModel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-
+    <EmbeddedResource Include="Forms\frmAlumnos.resx">
+      <DependentUpon>frmAlumnos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmGrupos.resx">
       <DependentUpon>frmGrupos.cs</DependentUpon>
     </EmbeddedResource>
