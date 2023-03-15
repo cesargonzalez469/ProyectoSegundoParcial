@@ -70,5 +70,15 @@ namespace PSPSDO.Forms
             DataSet ds = materiasClass.GetMaterias();
             dgvMaterias.DataSource = ds.Tables[0];
         }
+
+        private void btnEliminarMateria_Click(object sender, EventArgs e)
+        {
+            MateriasModel materias = new MateriasModel();
+            MateriasClass materiasClass = new MateriasClass();
+            materias.Id = (int)dgvMaterias.Rows[dgvMaterias.CurrentCell.RowIndex].Cells[0].Value;
+            materiasClass.DeleteMateria(materias);
+            DataSet ds = materiasClass.GetMaterias();
+            dgvMaterias.DataSource = ds.Tables[0];
+        }
     }
 }
