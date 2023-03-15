@@ -75,7 +75,6 @@ namespace PSPSDO.Forms
 
             dgvGrupos.DataSource = ds.Tables[0];
         }
-
         private void btnElimiarGrupos_Click(object sender, EventArgs e)
         {
             GrupoModels grupoModels = new GrupoModels();

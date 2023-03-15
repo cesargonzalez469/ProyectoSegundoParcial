@@ -69,6 +69,7 @@ namespace PSPSDO.Classes
 
         public string BorrarGrupos(GrupoModels grupo)
         {
+
             try
             {
                 ArrayList parametros = new ArrayList();
@@ -83,8 +84,6 @@ namespace PSPSDO.Classes
 
                 return ex.Message;
             }
-
-
         }
     }
 }
