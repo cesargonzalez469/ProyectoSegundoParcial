@@ -84,7 +84,7 @@
             // btnGuardarGrupos
             // 
             this.btnGuardarGrupos.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardarGrupos.Location = new System.Drawing.Point(35, 205);
+            this.btnGuardarGrupos.Location = new System.Drawing.Point(35, 206);
             this.btnGuardarGrupos.Name = "btnGuardarGrupos";
             this.btnGuardarGrupos.Size = new System.Drawing.Size(75, 33);
             this.btnGuardarGrupos.TabIndex = 4;
@@ -95,9 +95,9 @@
             // btnCargarGrupos
             // 
             this.btnCargarGrupos.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCargarGrupos.Location = new System.Drawing.Point(142, 202);
+            this.btnCargarGrupos.Location = new System.Drawing.Point(142, 205);
             this.btnCargarGrupos.Name = "btnCargarGrupos";
-            this.btnCargarGrupos.Size = new System.Drawing.Size(88, 39);
+            this.btnCargarGrupos.Size = new System.Drawing.Size(88, 34);
             this.btnCargarGrupos.TabIndex = 5;
             this.btnCargarGrupos.Text = "Cargar";
             this.btnCargarGrupos.UseVisualStyleBackColor = true;
@@ -140,7 +140,7 @@
             // 
             this.btnEliminarGrupos.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
             this.btnEliminarGrupos.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminarGrupos.Location = new System.Drawing.Point(400, 207);
+            this.btnEliminarGrupos.Location = new System.Drawing.Point(380, 205);
             this.btnEliminarGrupos.Name = "btnEliminarGrupos";
             this.btnEliminarGrupos.Size = new System.Drawing.Size(75, 29);
             this.btnEliminarGrupos.TabIndex = 10;
